@@ -1,0 +1,152 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <UseWPF>true</UseWPF>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <Title>$(AssemblyName) - Logical Process Monitor</Title>
+    <Authors>Erik Nagel</Authors>
+    <Company>NetEti</Company>
+    <Description>Monitoring- und Prozesssteuerungssoftware mit integrierter Verarbeitung erweiterter logischer Ausdrücke.</Description>
+    <Copyright>Copyright © $(Authors) 2012-$([System.DateTime]::Now.Year)</Copyright>
+    <AssemblyVersion>8.2.1.0</AssemblyVersion>
+    <FileVersion>8.2.1.0</FileVersion>
+    <PackageTags>NetEti Vishnu Node Control View</PackageTags>
+  </PropertyGroup>
+
+ 	<PropertyGroup>
+   	<VishnuRoot>$(ProjectDir)../../..</VishnuRoot>
+   	<AssemblyRoot>$(VishnuRoot)/ReadyBin/Assemblies</AssemblyRoot>
+   	<ApplicationIcon>Vishnu_multi.ico</ApplicationIcon>
+   	<RunAnalyzersDuringBuild>False</RunAnalyzersDuringBuild>
+   	<RunAnalyzersDuringLiveAnalysis>False</RunAnalyzersDuringLiveAnalysis>
+   	<EnableNETAnalyzers>False</EnableNETAnalyzers>
+	</PropertyGroup>
+	<Import Project="$(ProjectDir)../../AddOn/proj/*" Condition="exists('$(ProjectDir)../../AddOn/proj')" />
+
+	<Choose>
+  	<When Condition="!('$(TF_BUILD)' == 'true' Or '$(GITHUB_ACTIONS)' == 'true' Or '$(NETETI_CIB)' == 'true')">
+		  <ItemGroup>
+		    <Reference Include="NetEti.Global">
+		      <HintPath>$(AssemblyRoot)/NetEti.Global.dll</HintPath>
+		    </Reference>
+		    <Reference Include="NetEti.CommandLineAccess">
+		      <HintPath>$(AssemblyRoot)/NetEti.CommandLineAccess.dll</HintPath>
+		    </Reference>
+		    <Reference Include="NetEti.EnvAccess">
+		      <HintPath>$(AssemblyRoot)/NetEti.EnvAccess.dll</HintPath>
+		    </Reference>
+		    <Reference Include="NetEti.IniAccess">
+		      <HintPath>$(AssemblyRoot)/NetEti.IniAccess.dll</HintPath>
+		    </Reference>
+		    <Reference Include="NetEti.ProcessTools">
+		      <HintPath>$(AssemblyRoot)/NetEti.ProcessTools.dll</HintPath>
+		    </Reference>
+		    <Reference Include="NetEti.PropertyAccess">
+		      <HintPath>$(AssemblyRoot)/NetEti.PropertyAccess.dll</HintPath>
+		    </Reference>
+		    <Reference Include="NetEti.RegAccess">
+		      <HintPath>$(AssemblyRoot)/NetEti.RegAccess.dll</HintPath>
+		    </Reference>
+		    <Reference Include="NetEti.SettingsAccess">
+		      <HintPath>$(AssemblyRoot)/NetEti.SettingsAccess.dll</HintPath>
+		    </Reference>
+		    <Reference Include="NetEti.XMLAccess">
+		      <HintPath>$(AssemblyRoot)/NetEti.XMLAccess.dll</HintPath>
+		    </Reference>
+		    <Reference Include="NetEti.AppEnvReader">
+		      <HintPath>$(AssemblyRoot)/NetEti.AppEnvReader.dll</HintPath>
+		    </Reference>
+		    <Reference Include="NetEti.BasicAppSettings">
+		      <HintPath>$(AssemblyRoot)/NetEti.BasicAppSettings.dll</HintPath>
+		    </Reference>
+		    <Reference Include="NetEti.MVVMini">
+		      <HintPath>$(AssemblyRoot)/NetEti.MVVMini.dll</HintPath>
+		    </Reference>
+		    <Reference Include="NetEti.InfoController">
+		      <HintPath>$(AssemblyRoot)/NetEti.InfoController.dll</HintPath>
+		    </Reference>
+		    <Reference Include="NetEti.Logging">
+		      <HintPath>$(AssemblyRoot)/NetEti.Logging.dll</HintPath>
+		    </Reference>
+		    <Reference Include="NetEti.QuickEdit">
+		      <HintPath>$(AssemblyRoot)/NetEti.QuickEdit.dll</HintPath>
+		    </Reference>
+		  </ItemGroup>
+  	</When>
+    <Otherwise>
+		  <ItemGroup>
+		    <PackageReference Include="NetEti.Global" Version="1.0.0" />
+		    <PackageReference Include="NetEti.CommandLineAccess" Version="1.0.0" />
+		    <PackageReference Include="NetEti.EnvAccess" Version="1.0.0" />
+		    <PackageReference Include="NetEti.IniAccess" Version="1.0.0" />
+		    <PackageReference Include="NetEti.ProcessTools" Version="1.0.0" />
+		    <PackageReference Include="NetEti.PropertyAccess" Version="1.0.0" />
+		    <PackageReference Include="NetEti.RegAccess" Version="1.0.0" />
+		    <PackageReference Include="NetEti.SettingsAccess" Version="1.0.0" />
+		    <PackageReference Include="NetEti.XMLAccess" Version="1.0.0" />
+		    <PackageReference Include="NetEti.AppEnvReader" Version="1.0.0" />
+		    <PackageReference Include="NetEti.BasicAppSettings" Version="1.0.0" />
+		    <PackageReference Include="NetEti.MVVMini" Version="1.0.0" />
+		    <PackageReference Include="NetEti.InfoController" Version="1.0.0" />
+		    <PackageReference Include="NetEti.Logging" Version="1.0.0" />
+		    <PackageReference Include="NetEti.QuickEdit" Version="1.0.0" />
+		  </ItemGroup>
+    </Otherwise>
+	</Choose>
+
+	<ItemGroup>
+	  <Content Include="Vishnu_multi.ico" />
+	</ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="System.Management" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LogicalTaskTree\LogicalTaskTree.csproj" />
+    <ProjectReference Include="..\Vishnu.Interchange\Vishnu.Interchange.csproj" />
+    <ProjectReference Include="..\Vishnu.ViewModel\Vishnu.ViewModel.csproj" />
+    <ProjectReference Include="..\Vishnu.WPF_UI\Vishnu.WPF_UI.csproj" />
+  </ItemGroup>
+
+	<ItemGroup>
+	  <Reference Include="WpfAnimatedGif">
+	    <HintPath>$(AssemblyRoot)/WpfAnimatedGif.dll</HintPath>
+	  </Reference>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Update="Microsoft.Data.SqlClient.SNI.dll">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
+	  <None Update="Vishnu.exe.config.user.default">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
+	</ItemGroup>
+
+  <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+    <Exec Command="if not exist &quot;$(TargetDir)DefaultNodeControls&quot; mkdir &quot;$(TargetDir)DefaultNodeControls&quot;" />
+    <Exec Command="del /Q &quot;$(TargetDir)DefaultNodeControls\*.*&quot;" />
+    <!-- Exec Command="if not exist &quot;$(ProjectDir)..\Plugin&quot; mkdir &quot;$(ProjectDir)..\Plugin&quot;" /-->
+    <!-- Exec Command="del /Q &quot;$(ProjectDir)..\Plugin\*.*&quot;" /-->
+    <!-- Exec Command="if not exist &quot;$(TargetDir)Plugin&quot; mkdir &quot;$(TargetDir)Plugin&quot;" /-->
+    <!-- Exec Command="del /Q &quot;$(TargetDir)Plugin\*.*&quot;" /-->
+  </Target>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="copy /y &quot;$(ProjectDir)..\DefaultNodeControls\SingleNodeUserControl\SingleNodeUserControl\bin\$(ConfigurationName)\$(TargetFramework)\SingleNodeUserControl.*&quot; &quot;$(TargetDir)DefaultNodeControls\*.*&quot;" />
+    <Exec Command="copy /y &quot;$(ProjectDir)..\DefaultNodeControls\NodeListUserControl\NodeListUserControl\bin\$(ConfigurationName)\$(TargetFramework)\NodeListUserControl.*&quot; &quot;$(TargetDir)DefaultNodeControls\*.*&quot;" />
+    <Exec Command="copy /y &quot;$(ProjectDir)..\DefaultNodeControls\JobListUserControl\JobListUserControl\bin\$(ConfigurationName)\$(TargetFramework)\JobListUserControl.*&quot; &quot;$(TargetDir)DefaultNodeControls\*.*&quot;" />
+    <Exec Command="copy /y &quot;$(ProjectDir)..\DefaultNodeControls\JobConnectorUserControl\JobConnectorUserControl\bin\$(ConfigurationName)\$(TargetFramework)\JobConnectorUserControl.*&quot; &quot;$(TargetDir)DefaultNodeControls\*.*&quot;" />
+    <Exec Command="copy /y &quot;$(ProjectDir)..\DefaultNodeControls\SnapshotUserControl\SnapshotUserControl\bin\$(ConfigurationName)\$(TargetFramework)\SnapshotUserControl.*&quot; &quot;$(TargetDir)DefaultNodeControls\*.*&quot;" />
+    <Exec Command="copy /y &quot;$(ProjectDir)..\DefaultNodeControls\ConstantNodeUserControl\ConstantNodeUserControl\bin\$(ConfigurationName)\$(TargetFramework)\ConstantNodeUserControl.*&quot; &quot;$(TargetDir)DefaultNodeControls\*.*&quot;" />
+    <Exec Command="copy /y &quot;$(ProjectDir)..\ProcessTerminator\bin\$(ConfigurationName)\$(TargetFramework)\ProcessTerminator.*&quot; &quot;$(TargetDir)*.*&quot;" />
+  </Target>
+
+</Project>

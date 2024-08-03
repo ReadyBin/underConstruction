@@ -1,0 +1,49 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <RootNamespace>Vishnu.DemoApplications</RootNamespace>
+    <Title>$(AssemblyName) - Demoprogramm</Title>
+    <Authors>Erik Nagel</Authors>
+    <Company>NetEti</Company>
+    <Description>$(AssemblyName) - Demoprogramm</Description>
+    <Copyright>Copyright © $(Authors) 2023-$([System.DateTime]::Now.Year)</Copyright>
+    <AssemblyVersion>8.1.6.0</AssemblyVersion>
+    <FileVersion>8.1.6.0</FileVersion>
+  </PropertyGroup>
+
+ 	<PropertyGroup>
+   	<VishnuRoot>$(ProjectDir)../../../../..</VishnuRoot>
+   	<AssemblyRoot>$(VishnuRoot)/ReadyBin/Assemblies</AssemblyRoot>
+   	<RunAnalyzersDuringBuild>False</RunAnalyzersDuringBuild>
+   	<RunAnalyzersDuringLiveAnalysis>False</RunAnalyzersDuringLiveAnalysis>
+   	<EnableNETAnalyzers>False</EnableNETAnalyzers>
+	</PropertyGroup>
+	<Import Project="$(ProjectDir)../../../../AddOn/proj/*" Condition="exists('$(ProjectDir)../../../../AddOn/proj')" />
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Vishnu.Interchange\Vishnu.Interchange.csproj" />
+    <ProjectReference Include="..\..\..\Vishnu.ViewModel\Vishnu.ViewModel.csproj" />
+    <ProjectReference Include="..\..\..\Vishnu.WPF_UI\Vishnu.WPF_UI.csproj" />
+    <ProjectReference Include="..\ConstantNodeUserControl\ConstantNodeUserControl.csproj" />
+  </ItemGroup>
+
+	<Choose>
+  	<When Condition="!('$(TF_BUILD)' == 'true' Or '$(GITHUB_ACTIONS)' == 'true' Or '$(NETETI_CIB)' == 'true')">
+		  <ItemGroup>
+		    <Reference Include="NetEti.MVVMini">
+		      <HintPath>$(AssemblyRoot)/NetEti.MVVMini.dll</HintPath>
+		    </Reference>
+		  </ItemGroup>
+  	</When>
+    <Otherwise>
+		  <ItemGroup>
+		    <PackageReference Include="NetEti.MVVMini" Version="1.0.0" />
+		  </ItemGroup>
+    </Otherwise>
+	</Choose>
+
+</Project>

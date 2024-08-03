@@ -1,0 +1,79 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <PackageId>NetEti.$(AssemblyName)</PackageId>
+    <Title>$(AssemblyName) - Bibliothek mit gemeinsamen Klassen für Vishnu und Plugins</Title>
+    <Authors>Erik Nagel</Authors>
+    <Company>NetEti</Company>
+    <Description>$(AssemblyName) - Bibliothek mit gemeinsamen Klassen für Vishnu und Plugins</Description>
+    <Copyright>Copyright © $(Authors) 2012-$([System.DateTime]::Now.Year)</Copyright>
+    <AssemblyVersion>8.2.0.3</AssemblyVersion>
+    <FileVersion>8.2.0.3</FileVersion>
+    <PackageTags>NetEti Vishnu Basics</PackageTags>
+  </PropertyGroup>
+
+ 	<PropertyGroup>
+   	<VishnuRoot>$(ProjectDir)../../..</VishnuRoot>
+   	<AssemblyRoot>$(VishnuRoot)/ReadyBin/Assemblies</AssemblyRoot>
+   	<RunAnalyzersDuringBuild>False</RunAnalyzersDuringBuild>
+   	<RunAnalyzersDuringLiveAnalysis>False</RunAnalyzersDuringLiveAnalysis>
+   	<EnableNETAnalyzers>False</EnableNETAnalyzers>
+	</PropertyGroup>
+	<Import Project="$(ProjectDir)../../AddOn/proj/*" Condition="exists('$(ProjectDir)../../AddOn/proj')" />
+
+	<Choose>
+  	<When Condition="!('$(TF_BUILD)' == 'true' Or '$(GITHUB_ACTIONS)' == 'true' Or '$(NETETI_CIB)' == 'true')">
+		  <ItemGroup>
+		    <Reference Include="NetEti.AppEnvReader">
+		      <HintPath>$(AssemblyRoot)/NetEti.AppEnvReader.dll</HintPath>
+		    </Reference>
+		    <Reference Include="NetEti.BasicAppSettings">
+		      <HintPath>$(AssemblyRoot)/NetEti.BasicAppSettings.dll</HintPath>
+		    </Reference>
+		    <Reference Include="NetEti.Global">
+		      <HintPath>$(AssemblyRoot)/NetEti.Global.dll</HintPath>
+		    </Reference>
+		    <Reference Include="NetEti.InfoController">
+		      <HintPath>$(AssemblyRoot)/NetEti.InfoController.dll</HintPath>
+		    </Reference>
+		    <Reference Include="NetEti.Logging">
+		      <HintPath>$(AssemblyRoot)/NetEti.Logging.dll</HintPath>
+		    </Reference>
+		    <Reference Include="NetEti.MultiScreen">
+		      <HintPath>$(AssemblyRoot)/NetEti.MultiScreen.dll</HintPath>
+		    </Reference>
+		    <Reference Include="NetEti.MVVMini">
+		      <HintPath>$(AssemblyRoot)/NetEti.MVVMini.dll</HintPath>
+		    </Reference>
+		    <Reference Include="NetEti.NetworkMappingsRefresher">
+		      <HintPath>$(AssemblyRoot)/NetEti.NetworkMappingsRefresher.dll</HintPath>
+		    </Reference>
+		    <Reference Include="NetEti.ObjectSerializer">
+		      <HintPath>$(AssemblyRoot)/NetEti.ObjectSerializer.dll</HintPath>
+		    </Reference>
+		  </ItemGroup>
+  	</When>
+    <Otherwise>
+		  <ItemGroup>
+		    <PackageReference Include="NetEti.AppEnvReader" Version="1.0.0" />
+		    <PackageReference Include="NetEti.BasicAppSettings" Version="1.0.0" />
+		    <PackageReference Include="NetEti.Global" Version="1.0.0" />
+		    <PackageReference Include="NetEti.InfoController" Version="1.0.0" />
+		    <PackageReference Include="NetEti.Logging" Version="1.0.0" />
+		    <PackageReference Include="NetEti.MultiScreen" Version="1.0.0" />
+		    <PackageReference Include="NetEti.MVVMini" Version="1.0.0" />
+		    <PackageReference Include="NetEti.NetworkMappingsRefresher" Version="1.0.0" />
+		    <PackageReference Include="NetEti.ObjectSerializer" Version="1.0.0" />
+		  </ItemGroup>
+    </Otherwise>
+	</Choose>
+
+	<ItemGroup>
+	  <Compile Remove="Result - Kopie.cs" />
+	</ItemGroup>
+
+</Project>

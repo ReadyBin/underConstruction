@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <RootNamespace>Vishnu.UserControls</RootNamespace>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <Title>$(AssemblyName) - Vishnu-Default-UserControl für Konstanten</Title>
+    <Authors>Erik Nagel</Authors>
+    <Company>NetEti</Company>
+    <Description>Assembly mit  Vishnu-Default-UserControl für Konstanten</Description>
+    <Copyright>Copyright © $(Authors) 2015-$([System.DateTime]::Now.Year)</Copyright>
+    <AssemblyVersion>8.1.6.0</AssemblyVersion>
+    <FileVersion>8.1.6.0</FileVersion>
+    <PackageTags>NetEti Vishnu Node Control View</PackageTags>
+  </PropertyGroup>
+
+ 	<PropertyGroup>
+   	<VishnuRoot>$(ProjectDir)../../../../..</VishnuRoot>
+   	<AssemblyRoot>$(VishnuRoot)/ReadyBin/Assemblies</AssemblyRoot>
+   	<RunAnalyzersDuringBuild>False</RunAnalyzersDuringBuild>
+   	<RunAnalyzersDuringLiveAnalysis>False</RunAnalyzersDuringLiveAnalysis>
+   	<EnableNETAnalyzers>False</EnableNETAnalyzers>
+	</PropertyGroup>
+	<Import Project="$(ProjectDir)../../../../AddOn/proj/*" Condition="exists('$(ProjectDir)../../../../AddOn/proj')" />
+
+	<ItemGroup>
+	  <ProjectReference Include="..\..\..\Vishnu.Interchange\Vishnu.Interchange.csproj" />
+	  <ProjectReference Include="..\..\..\Vishnu.ViewModel\Vishnu.ViewModel.csproj" />
+	  <ProjectReference Include="..\..\..\Vishnu.WPF_UI\Vishnu.WPF_UI.csproj" />
+	</ItemGroup>
+
+</Project>

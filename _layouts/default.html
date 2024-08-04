@@ -10,6 +10,11 @@
         {{ content }}
     </div>
 
+    <footer>
+      <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}</p>
+      <p>Generated on: {{ site.time | date: "%B %d, %Y at %I:%M %p" }}</p>
+    </footer>
+
   </body>
 
 </html>

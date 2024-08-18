@@ -1,0 +1,10 @@
+---
+layout: default-redirected
+title: "Meine Website - Deutsch"
+---
+<!-- h1>Willkommen auf meiner deutschen Seite!</h1>
+<p>Dies ist der Inhalt der Startseite.</p -->
+{% capture readme_content %}
+  {% include_relative README.md %}
+{% endcapture %}
+{{ readme_content | markdownify }}

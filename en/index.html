@@ -1,0 +1,10 @@
+---
+layout: default-redirected
+title: "My Website - English"
+---
+<!-- h1>Welcome to my English site!</h1>
+<p>This is the English version of the Website.</p -->
+{% capture readme_content %}
+  {% include_relative README.md %}
+{% endcapture %}
+{{ readme_content | markdownify }}

@@ -5,6 +5,7 @@ description: > # this means to ignore newlines until "baseurl:"
 
 # Production
 # baseurl: "/Vishnu" # the subpath of the site on https://vishnuhome.github.io/Vishnu
+# # absoluteurl: "https://vishnuhome.github.io/Vishnu"
 # url: "https://vishnuhome.github.io/Vishnu" # the base hostname & protocol for your site
 
 # local Testing
@@ -16,10 +17,6 @@ baseurl: "/underConstruction" # the subpath of the site for online Testing on ht
 url: "https://readybin.github.io/underConstruction" # the base hostname & protocol for your site
 
 keywords: ["Vishnu", "monitoring", "monitor", "Überwachung", "überwachen", "plugin", "parallel", "Prozesssteuerung", "Steuerung", "process", "job-controller", "controlling", "windows", "desktop", "c#", "github", "open source", "kostenlos", "free", "vishnu@reallyhuman.net"]
-
-include:
-  - _includes/head-custom.html
-  - head-custom.html
 
 # theme: minima
 

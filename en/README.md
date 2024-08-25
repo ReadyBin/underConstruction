@@ -1,4 +1,7 @@
 
+![zur deutschen Version](./de.png?raw=true "zur deutschen Version")
+[zur deutschen Version]({{ site.baseurl }}/de/)
+
 # Vishnu
 ### Vishnu ist ein Monitoring- und Prozesssteuerungs-Baukasten mit integrierter Verarbeitung erweiterter logischer Ausdrücke.
 

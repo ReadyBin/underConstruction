@@ -1,7 +1,7 @@
 title: Vishnu - logical monitoring job-controller
 
 description: > # this means to ignore newlines until "baseurl:"
-  Vishnu ist ein Baukastensystem für Monitoring und Prozesssteuerung mit integrierter Verarbeitung erweiterter logischer Ausdrücke. Vishnu ist eine c# Desktopanwendung für Windows und open source.
+  
 
 # Production
 # baseurl: "/Vishnu" # the subpath of the site on https://vishnuhome.github.io/Vishnu

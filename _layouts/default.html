@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<html lang="{{ page.lang | default: site.lang | default: "de" }}">
 
   {%- include head.html -%}
 
   <body>
-    <span class="spanner">XXX</span>
-    <span class="spanner">_ {{ site.baseurl }} _</span>
+    <header>
+      <span class="spanner">XXX</span>
+      <span class="spanner">_ {{ site.baseurl }} _</span>
+    </header>
+
     <div class="container-lg px-3 my-5 markdown-body">
         {{ content }}
     </div>

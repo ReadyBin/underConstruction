@@ -1,5 +1,5 @@
 
-![to the english version](./gb.png?raw=true "to the english version")
+![to the English version](./gb.png?raw=true "to the English version")
 [to the English version]({{ site.baseurl }}/en/)
 
 # Vishnu

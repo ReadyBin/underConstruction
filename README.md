@@ -1,6 +1,5 @@
 
-🇬🇧 [English Version]({{ site.baseurl }}/en/)
-🇩🇪 [Deutsche Version]({{ site.baseurl }}/de/)
+🇬🇧 [to the English Version]({{ site.baseurl }}/en/)
 
 # Vishnu
 ### Vishnu ist ein Monitoring- und Prozesssteuerungs-Baukasten mit integrierter Verarbeitung erweiterter logischer Ausdrücke.

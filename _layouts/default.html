@@ -4,18 +4,13 @@
   {%- include head.html -%}
 
   <body>
-    <header>
-      <span class="spanner">XXX</span>
-      <span class="spanner">_ {{ site.baseurl }} _</span>
-    </header>
 
     <div class="container-lg px-3 my-5 markdown-body">
         {{ content }}
     </div>
 
     <footer>
-      <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}</p>
-      <p>Generated on: {{ site.time | date: "%B %d, %Y at %I:%M %p" }}</p>
+      <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}&nbsp;&nbsp; Generated on: {{ site.time | date: "%B %d, %Y at %I:%M %p" }}</p>
     </footer>
 
   </body>

@@ -2,9 +2,7 @@
 ![to the English version](./gb.png?raw=true "en")
 [to the English version](../en/)
 
-[//]: # [to the English version]({{ site.baseurl }}/en/)
-
-# Vishnu (de)
+# Vishnu
 ### Vishnu ist ein Monitoring- und Prozesssteuerungs-Baukasten mit integrierter Verarbeitung erweiterter logischer Ausdrücke.
 
 ![Vishnu Demo Start](./FirstView.png?raw=true "Vishnu Demo")

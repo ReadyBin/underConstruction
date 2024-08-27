@@ -2,9 +2,7 @@
 ![zur deutschen Version](./de.png?raw=true "de")
 [zur deutschen Version](../de/)
 
-[//]: # [zur deutschen Version]({{ site.baseurl }}/de/)
-
-# Vishnu (en)
+# Vishnu
 ### Vishnu is a monitoring and process control toolkit with integrated processing of extended logical expressions.
 
 ![Vishnu Demo Start](./FirstView.png?raw=true "Vishnu Demo")

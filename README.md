@@ -4,7 +4,7 @@
 # Vishnu
 ### Vishnu ist ein Monitoring- und Prozesssteuerungs-Baukasten mit integrierter Verarbeitung erweiterter logischer Ausdrücke.
 
-![Vishnu-Hilfe Startseite](./FirstView.png?raw=true "Vishnu-Hilfe")
+![Vishnu Demo Start](./FirstView.png?raw=true "Vishnu Demo")
 *So sieht Vishnu nach dem Start mit dem ersten Demo-Job ungefähr aus*.
 
 ## Voraussetzungen

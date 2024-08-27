@@ -1,7 +1,7 @@
-# Project Title
 
-🇬🇧 [English Version](README_en.md)  
-🇩🇪 [Deutsche Version](README_de.md)
+🇬🇧 [English Version](en/README.md)  
+
+🇩🇪 [Deutsche Version](de/README.md)
 
 
 

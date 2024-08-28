@@ -41,7 +41,7 @@ Im Unterverzeichnis **DemoJobs** stehen die Job-Definitionen einer Reihe von int
 ## Dokumentation
 Die ausführliche Dokumentation findest du in **Vishnu** mit **F1**, im mit gelieferten **Vishnu_doc.de.chm** oder
 online unter [Vishnu online Dokumentation](https://neteti.de/Vishnu.Doc/)<br />
-<span style="font-size:14px;">(Hinweis: Wenn die Hilfedatei (*.chm) nicht korrekt angezeigt werden sollte, sieh bitte im [CHM-HowTo](CHM_HowTo.html) nach.)</span>
+<span style="font-size:14px;">(Hinweis: Wenn die Hilfedatei (*.chm) nicht korrekt angezeigt werden sollte, sieh bitte im [CHM-HowTo](CHM_HowTo.md) nach.)</span>
 #### Stichworte: Windows, wpf, c#, monitoring, job-controlling, logical tree, parallel, desktop, distributed
 
 ## Quellcode und Entwicklung

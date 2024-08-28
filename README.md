@@ -30,7 +30,7 @@
 
 	### Vishnu-Demo:
 
-	- Im Verzeichnis ReadyBin/Vishnu.bin **Vishnu.exe** starten.<br/>
+	- Im Verzeichnis ReadyBin/Vishnu.bin **Vishnu.exe** starten.<br />
 	<span  style="font-size:14px;">Hinweis 1: Wenn Windows die passende DotNet-Runtime nachinstallieren möchte, folge bitte den Anweisungen und starte danach Vishnu erneut.<br />
 	<span style="font-size:14px;">Hinweis 2: Wenn die Meldung kommt
 	 "Der Computer wurde durch Windows geschützt", bitte einmalig über<br />"Weitere Informationen" gehen und den Start von Vishnu erlauben.</span>
@@ -40,14 +40,14 @@ Im Unterverzeichnis **DemoJobs** stehen die Job-Definitionen einer Reihe von int
 
 ## Dokumentation
 Die ausführliche Dokumentation findest du in **Vishnu** mit **F1**, im mit gelieferten **Vishnu_doc.de.chm** oder
-online unter [Vishnu online Dokumentation](https://neteti.de/Vishnu.Doc/)<br/>
+online unter [Vishnu online Dokumentation](https://neteti.de/Vishnu.Doc/)<br />
 <span style="font-size:14px;">(Hinweis: Wenn die Hilfedatei (*.chm) nicht korrekt angezeigt werden sollte, sieh bitte im [CHM-HowTo](CHM_HowTo.md) nach.)</span>
 #### Stichworte: Windows, wpf, c#, monitoring, job-controlling, logical tree, parallel, desktop, distributed
 
 ## Quellcode und Entwicklung
 
 1. Forken des Repositories **Vishnu** über den Button Fork
-<br/>(Repository https://github.com/VishnuHome/Vishnu)
+<br />(Repository https://github.com/VishnuHome/Vishnu)
 
    ![Fork](Fork_Button.png)
 2. Clonen des geforkten Repositories **Vishnu** in das existierende Unterverzeichnis
@@ -78,19 +78,19 @@ Vishnu liefert schon eine Reihe von Checkern mit. Diese findest du unter [InPlug
 
 Vishnu-Plugins kannst du genauso forken und clonen wie unter [Quellcode und Entwickung](#Quellcode-und-Entwicklung) schon beschrieben,
 nur dass dein lokales Unterverzeichnis das schon vorgesehene **InPlug** sein sollte.
-<br/>(Quellen: [InPlug](https://github.com/InPlug))
+<br />(Quellen: [InPlug](https://github.com/InPlug))
 
 ## Das Basis-Framework
 Vishnu arbeitet mit einigen allgemeingültigen DLLs, dem Basis-Framework.
 Für den Fall, dass du dir die Quellen davon anschauen willst oder dorthinein debuggen musst,
 kannst du dir die zugehörigen Quellen in den dafür vorgesehenen Ordner **WorkFrame** clonen.
-<br/>(Quellen: https://github.com/WorkFrame)
+<br />(Quellen: https://github.com/WorkFrame)
 
 ---
 
 ## Gibt es Support?
 
-#### Kurze Antwort: *nein*.<br/>
+#### Kurze Antwort: *nein*.<br />
 #### lange Antwort:
 Ich (Erik) programmiere Vishnu aktuell (April 2024) noch allein.
 Auch, wenn ich natürlich alle deine/eure Erfahrungberichte, Anregungen, Verbesserungsvorschläge und Fehlermeldungen
@@ -133,51 +133,51 @@ Bitte versuche nicht, einen direkt geänderten master-branch zurückzumelden - d
 
 ## Fremde Software, fremde Ideen
 
-[Sandcastle Help File Builder (SHFB)](https://github.com/EWSoftware/SHFB)<br/>
+[Sandcastle Help File Builder (SHFB)](https://github.com/EWSoftware/SHFB)<br />
 Vielen Dank an Eric Woodruff, EWSoftware.
 Ohne den Sandcastle Help File Builder wäre die Vishnu-Dokumentation nicht denkbar.
 
-[Newtonsoft.Json](https://www.newtonsoft.com/json)<br/>
+[Newtonsoft.Json](https://www.newtonsoft.com/json)<br />
 Danke an James Newton-King für seine unverzichtbare Software.
 
 [Demo-Logik für SplashWindow](https://www.codeproject.com/Articles/116875/WPF-Loading-Splash-Screen)<br />
 Dank an Amr Azab und Nate Lowry.
 
-[WPF-Tortendiagrammme](https://www.codeproject.com/Articles/442506/Simple-and-Easy-to-Use-Pie-Chart-Controls-in-WPF)</br>
+[WPF-Tortendiagrammme](https://www.codeproject.com/Articles/442506/Simple-and-Easy-to-Use-Pie-Chart-Controls-in-WPF)<br />
 Vielen Dank an Kashif Imran auf Code Project.
 
-[Variable Grids](https://rachel53461.wordpress.com/2011/09/17/wpf-grids-rowcolumn-count-properties/)</br>
+[Variable Grids](https://rachel53461.wordpress.com/2011/09/17/wpf-grids-rowcolumn-count-properties/)<br />
 Herzlichen Dank an Rachel Lim für ihren fantastischen Blog. Danke auch für ihren Hinweis zu ShutdownMode.OnMainWindowClose.
 
-[Monphasen Berechnung](https://www.codeproject.com/script/Membership/View.aspx?mid=1961229)<br/>
-Danke Mostafa Kaisoun für seine Berechnungslogik.
+[Monphasen Berechnung](https://www.codeproject.com/script/Membership/View.aspx?mid=1961229)<br />
+Dank an Mostafa Kaisoun für seine Berechnungslogik.
 
-[Geolocation](https://www.geojs.io)<br/>
+[Geolocation](https://www.geojs.io)<br />
 Vielen Dank an die Entwickler und Sponsoren dieser freien Seite für Geolocation.
 
-[Wettervorhersagen](https://open-meteo.com) und<br/>
-[Wetter-Icons](https://www.7timer.info)<br/>
+[Wettervorhersagen](https://open-meteo.com) und<br />
+[Wetter-Icons](https://www.7timer.info)<br />
 Vielen Dank an das Team von open-meteo.com und auch an Chenzhou Cui und seine Freunde, die die Seite 7timer.info für Wettervorhersagen betreiben.
 
-[Mindest-Informationen über einen Screen](https://stackoverflow.com/questions/1927540/how-to-get-the-size-of-the-current-screen-in-wpf)<br/>
+[Mindest-Informationen über einen Screen](https://stackoverflow.com/questions/1927540/how-to-get-the-size-of-the-current-screen-in-wpf)<br />
 Danke an Nils Andresen auf StackOverflow
 
-[Basisklassen für ViewModels](https://github.com/poma/SshConnect/blob/master/SshConnect/MvvmFoundation/ObservableObject.cs)<br/>
+[Basisklassen für ViewModels](https://github.com/poma/SshConnect/blob/master/SshConnect/MvvmFoundation/ObservableObject.cs)<br />
 Vielen Dank an Roman Semenov (poma) für diese Starthilfe.
 
-[Visual Commander](https://marketplace.visualstudio.com/items?itemName=SergeyVlasov.VisualCommander)<br/>
+[Visual Commander](https://marketplace.visualstudio.com/items?itemName=SergeyVlasov.VisualCommander)<br />
 Danke auch an Sergey Vlasov für seine hilfreiche Visual Studio Automatisierung.
 
 [SingleInstance](https://stackoverflow.com/users/51170/matt-davis)
 Danke an Matt Davis für seine sehr gute Mutex-Lösung.
 
-[inzwischen nicht mehr online: ZIP-Routinen für ZIPs > 4GB mit Passwörtern]<br/>
+[inzwischen nicht mehr online: ZIP-Routinen für ZIPs > 4GB mit Passwörtern]<br />
 Danke auch Peter Bromberg für seine Unterstützung bei den Zip-Routinen.
 
-[Equality Converter](https://stackoverflow.com/questions/37302270/comparing-two-dynamic-values-in-datatrigger)<br/>
+[Equality Converter](https://stackoverflow.com/questions/37302270/comparing-two-dynamic-values-in-datatrigger)<br />
 Dank an Jason Tyler auf stackoverflow.
 
-Dank auch an die vielen weiteren Software-Entwickler/Entwicklerinnen, die ihr Wissen mit uns allen geteilt haben.<br/>
+Dank auch an die vielen weiteren Software-Entwickler/Entwicklerinnen, die ihr Wissen mit uns allen geteilt haben.<br />
 
 Last but not least geht mein Dank an die Teams von Microsoft für ihre freien Express- und Community-Editions.
 

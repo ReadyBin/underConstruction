@@ -6,7 +6,7 @@
 ### Vishnu is a monitoring and process control toolkit with integrated processing of extended logical expressions.
 
 ![Vishnu Demo Start](./FirstView.png?raw=true "Vishnu Demo")
-*This is roughly what Vishnu looks like after the start of the first demo job.
+*This is roughly what Vishnu looks like after the start of the first demo job.*
 
 ## Requirements
 
@@ -22,7 +22,7 @@
 
 	Please carry out the following steps for the initial setup:
 	* Create a local base directory for all other Vishnu and help directories, for example c:\Users\<user>\Documents\MyVishnu.
-	* [init.zip](https://github.com/VishnuHome/Setup/raw/master/Vishnu.bin/init.zip) and unzip it into the base directory.
+	* Download [init.zip](https://github.com/VishnuHome/Setup/raw/master/Vishnu.bin/init.zip) and unzip it into the base directory.
 
 	The following structure is then created:
       
@@ -33,7 +33,7 @@
 	- Start **Vishnu.exe** in the ReadyBin/Vishnu.bin directory.<br/>
 	<span  style="font-size:14px;">Note 1: If Windows wants to install the appropriate DotNet runtime, please follow the instructions and then restart Vishnu.<br />
 	<span style="font-size:14px;">Note 2: When the message appears
-	 "The computer has been protected by Windows", please click once on<br />Go to "More information" and allow Vishnu to start.</span>
+	 "The computer has been protected by Windows", please click once on<br /> "More information" and allow Vishnu to start.</span>
 
 ## Demos
 The **DemoJobs** subdirectory contains the job definitions of a number of interesting demonstration jobs.
@@ -97,11 +97,11 @@ Even though I would of course appreciate all your experience reports, suggestion
 with interest, at the moment I simply cannot foresee how things will develop.
 Where I can, I will correct errors and take suggestions into account in my personal prioritisation.
 But at this point it should be said again: Vishnu is open source and free.
-**So help yourselves and, above all, each other.
+**So help yourselves and, above all, each other.**
 
 ## Communication and participation
 
-**Please use the discussion topics ("Issues").
+**Please use the discussion topics ("Issues").**
 <br />If you discover errors or want to make suggestions for improvement, please open a new discussion topic ("New issue") first.
 However, please check first whether a suitable topic already exists.<br />
 All kinds of suggestions for improvement are welcome, as are personal experience reports.
@@ -150,7 +150,7 @@ Many thanks to Kashif Imran on Code Project.
 Many thanks to Rachel Lim for her fantastic blog. Thanks also for her advice on ShutdownMode.OnMainWindowClose.
 
 [Monphase calculation](https://www.codeproject.com/script/Membership/View.aspx?mid=1961229)<br/>
-Thank you Mostafa Kaisoun for his calculation logic.
+Thanks to Mostafa Kaisoun for his calculation logic.
 
 [Geolocation](https://www.geojs.io)<br/>
 Many thanks to the developers and sponsors of this free geolocation site.

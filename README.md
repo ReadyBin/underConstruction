@@ -6,7 +6,7 @@
 ### Vishnu ist ein Monitoring- und Prozesssteuerungs-Baukasten mit integrierter Verarbeitung erweiterter logischer Ausdrücke.
 
 ![Vishnu Demo Start](./FirstView.png?raw=true "Vishnu Demo")
-*So sieht Vishnu nach dem Start mit dem ersten Demo-Job ungefähr aus*.
+*So sieht Vishnu nach dem Start mit dem ersten Demo-Job ungefähr aus.*
 
 ## Voraussetzungen
 
@@ -76,7 +76,7 @@ Prüfergebnisse zurück (siehe auch in der Hilfe [Vishnu Akteure](https://neteti
 und [eigene Checker](https://neteti.de/Vishnu.Doc/html/a3f9771a-ac24-46c0-97df-d2bde6a990e8.htm)).
 Vishnu liefert schon eine Reihe von Checkern mit. Diese findest du unter [InPlug](https://github.com/InPlug).
 
-Vishnu-Plugins kannst du genauso forken und clonen wie unter [Quellcode und Entwickung](#Quellcode-und-Entwicklung) schon beschrieben,
+Vishnu-Plugins kannst du genauso forken und clonen wie unter [Quellcode und Entwickung](#quellcode-und-entwicklung) schon beschrieben,
 nur dass dein lokales Unterverzeichnis das schon vorgesehene **InPlug** sein sollte.
 <br />(Quellen: [InPlug](https://github.com/InPlug))
 
@@ -127,7 +127,7 @@ Wenn du Änderungen am Plugin- Framework- oder Vishnu-Quellcode vorgenommen und 
 kannst du deinen eigenen **branch** über einen **"pull request"** zurückliefern. 
 Der Branch wird dann begutachtet und bei Erfolg in Vishnu-master übernommen.
 Bitte versuche nicht, einen direkt geänderten master-branch zurückzumelden - das würde nicht angenommen.
-(siehe auch [Gibt es Support?](#Gibt-es-Support))
+(siehe auch [Gibt es Support?](#gibt-es-support))
 
 ---
 

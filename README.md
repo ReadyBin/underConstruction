@@ -17,12 +17,13 @@
 ## Schnellstart
   - ### Vishnu Quellen
 	* Die Quellen findest du hier: [Vishnu auf GitHub](https://github.com/VishnuHome/Vishnu)
+	* Die Übersichtsseite (github page) findest du hier: [Vishnu auf GitHub.io](https://vishnuhome.github.io/Vishnu)
 
   - ### Installation:
 
 	Für die erste Einrichtung führe bitte nachfolgende Schritte aus:
 	* Ein lokales Basisverzeichnis für alle weiteren Vishnu- und Hilfs-Verzeichnisse anlegen, zum Beispiel c:\Users\<user>\Documents\MyVishnu.
-	* [init.zip](https://github.com/VishnuHome/Setup/raw/master/Vishnu.bin/init.zip) herunterladen und in das Basisverzeichnis entpacken.
+	* [Vishnu.data.zip](https://github.com/VishnuHome/Setup/raw/master/Vishnu.bin/Vishnu.data.zip) herunterladen und in das Basisverzeichnis entpacken.
 
 	Es entsteht dann folgende Struktur:
       
@@ -40,8 +41,8 @@ Im Unterverzeichnis **DemoJobs** stehen die Job-Definitionen einer Reihe von int
 
 ## Dokumentation
 Die ausführliche Dokumentation findest du in **Vishnu** mit **F1**, im mit gelieferten **Vishnu_doc.de.chm** oder
-online unter [Vishnu online Dokumentation](https://neteti.de/Vishnu.Doc/)<br />
-<span style="font-size:14px;">(Hinweis: Wenn die Hilfedatei (*.chm) nicht korrekt angezeigt werden sollte, sieh bitte im [CHM-HowTo](https://readybin.github.io/underConstruction/de/ChmHowTo.html) nach.)</span>
+online unter [Vishnu online Dokumentation](https://neteti.de/Vishnu.doc.de/)<br />
+<span style="font-size:14px;">(Hinweis: Wenn die Hilfedatei (*.chm) nicht korrekt angezeigt werden sollte, sieh bitte im [CHM-HowTo](Chm_HowTo.md) nach.)</span>
 #### Stichworte: Windows, wpf, c#, monitoring, job-controlling, logical tree, parallel, desktop, distributed
 
 ## Quellcode und Entwicklung
@@ -72,11 +73,11 @@ Vishnu ist nur die Logik-Maschine, die eigentliche Arbeit machen die Vishnu-Plug
 Vishnu-Plugins sind kleine Programmteile (DLLs), die von Vishnu zur Laufzeit geladen werden.
 Zu den Vishnu-Plugins gehören neben anderen die Checker. 
 Checker sind die wesentlichen Vishnu-Akteure. Sie machen die Prüf-Arbeit und liefern
-Prüfergebnisse zurück (siehe auch in der Hilfe [Vishnu Akteure](https://neteti.de/Vishnu.Doc/html/bc0ffa08-c936-4fad-8fdb-dbd2279fc360.htm)
-und [eigene Checker](https://neteti.de/Vishnu.Doc/html/a3f9771a-ac24-46c0-97df-d2bde6a990e8.htm)).
+Prüfergebnisse zurück (siehe auch in der Hilfe [Vishnu Akteure](https://neteti.de/Vishnu.doc.de/html/bc0ffa08-c936-4fad-8fdb-dbd2279fc360.htm)
+und [eigene Checker](https://neteti.de/Vishnu.doc.de/html/a3f9771a-ac24-46c0-97df-d2bde6a990e8.htm)).
 Vishnu liefert schon eine Reihe von Checkern mit. Diese findest du unter [InPlug](https://github.com/InPlug).
 
-Vishnu-Plugins kannst du genauso forken und clonen wie unter [Quellcode und Entwickung](#quellcode-und-entwicklung) schon beschrieben,
+Vishnu-Plugins kannst du genauso forken und clonen wie unter [Quellcode und Entwickung](#Quellcode-und-Entwicklung) schon beschrieben,
 nur dass dein lokales Unterverzeichnis das schon vorgesehene **InPlug** sein sollte.
 <br />(Quellen: [InPlug](https://github.com/InPlug))
 
@@ -107,8 +108,8 @@ Bitte prüfe aber vorher, ob ein passendes Thema nicht vielleicht schon existier
 Es sind alle Arten von Verbesserungsvorschlägen, aber auch persönliche Erfahrungsberichte herzlich willkommen.
 Das müssen nicht unbedingt weltverbessernde Großtaten sein, auch Schreibfehler wollen korrigiert werden.
 Insbesondere fehlen mir noch gute Ideen und Lösungen für eine englische Präsenz.
-In der Vishnu-Hilfe stehen dazu Anregungen auf den Seiten [Ideensammlung](https://neteti.de/Vishnu.Doc/html/2e84f44c-6249-45dc-bdc2-c656de87c907.htm)
-und [bekannte Fehler und Probleme](https://neteti.de/Vishnu.Doc/html/68cd3f39-4a2c-49f3-8a90-b2442b5880a9.htm).
+In der Vishnu-Hilfe stehen dazu Anregungen auf den Seiten [Ideensammlung](https://neteti.de/Vishnu.doc.de/html/2e84f44c-6249-45dc-bdc2-c656de87c907.htm)
+und [bekannte Fehler und Probleme](https://neteti.de/Vishnu.doc.de/html/68cd3f39-4a2c-49f3-8a90-b2442b5880a9.htm).
 
 #### Änderungen und Debugging am Plugin- oder Vishnu-Quellcode
 
@@ -127,7 +128,7 @@ Wenn du Änderungen am Plugin- Framework- oder Vishnu-Quellcode vorgenommen und 
 kannst du deinen eigenen **branch** über einen **"pull request"** zurückliefern. 
 Der Branch wird dann begutachtet und bei Erfolg in Vishnu-master übernommen.
 Bitte versuche nicht, einen direkt geänderten master-branch zurückzumelden - das würde nicht angenommen.
-(siehe auch [Gibt es Support?](#gibt-es-support))
+(siehe auch [Gibt es Support?](#Gibt-es-Support))
 
 ---
 
@@ -152,8 +153,9 @@ Herzlichen Dank an Rachel Lim für ihren fantastischen Blog. Danke auch für ihr
 [Monphasen Berechnung](https://www.codeproject.com/script/Membership/View.aspx?mid=1961229)<br />
 Dank an Mostafa Kaisoun für seine Berechnungslogik.
 
-[Geolocation](https://www.geojs.io)<br />
-Vielen Dank an die Entwickler und Sponsoren dieser freien Seite für Geolocation.
+[Geolocation](https://www.geojs.io) und<br />
+[Geolocation](https://get.geojs.io/v1/ip/geo.json)<br/>
+Vielen Dank an die Entwickler und Sponsoren dieser freien Seiten für Geolocation.
 
 [Wettervorhersagen](https://open-meteo.com) und<br />
 [Wetter-Icons](https://www.7timer.info)<br />
@@ -173,6 +175,8 @@ Danke an Matt Davis für seine sehr gute Mutex-Lösung.
 
 [inzwischen nicht mehr online: ZIP-Routinen für ZIPs > 4GB mit Passwörtern]<br />
 Danke auch Peter Bromberg für seine Unterstützung bei den Zip-Routinen.
+[_intern_](https://github.com/VishnuHome/Setup/raw/master/Vishnu.bin/Vishnu.0.zip).
+[_intern_](https://github.com/VishnuHome/Setup/raw/master/Vishnu.bin/Vishnu.1.zip).
 
 [Equality Converter](https://stackoverflow.com/questions/37302270/comparing-two-dynamic-values-in-datatrigger)<br />
 Dank an Jason Tyler auf stackoverflow.

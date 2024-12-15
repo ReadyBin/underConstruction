@@ -17,12 +17,13 @@
 ## Quick start
   - ### Vishnu sources
 	* You can find the sources here: [Vishnu on GitHub](https://github.com/VishnuHome/Vishnu)
+	* The overview page (github page) can be found here: [Vishnu on GitHub.io](https://vishnuhome.github.io/Vishnu)
 
   - ### Installation:
 
 	Please carry out the following steps for the initial setup:
 	* Create a local base directory for all other Vishnu and help directories, for example c:\Users\<user>\Documents\MyVishnu.
-	* Download [init.zip](https://github.com/VishnuHome/Setup/raw/master/Vishnu.bin/init.zip) and unzip it into the base directory.
+	* Download [Vishnu.data.zip](https://github.com/VishnuHome/Setup/raw/master/Vishnu.bin/Vishnu.data.zip) and unzip it into the base directory.
 
 	The following structure is then created:
       
@@ -39,8 +40,8 @@
 The **DemoJobs** subdirectory contains the job definitions of a number of interesting demonstration jobs.
 
 ## Documentation
-You can find the detailed documentation in **Vishnu** with **F1**, in the **Vishnu_doc.de.chm** or
-online at [Vishnu online documentation](https://neteti.de/Vishnu.Doc/)<br />
+You can find the detailed documentation in **Vishnu** with **F1**, in the **Vishnu_doc.en.chm** or
+online at [Vishnu online documentation](https://neteti.de/Vishnu.doc.en/)<br />
 <span style="font-size:14px;">(Note: If the help file (*.chm) is not displayed correctly, please refer to [CHM-HowTo](https://readybin.github.io/underConstruction/en/ChmHowTo.html)).</span>
 #### Keywords: Windows, wpf, c#, monitoring, job-controlling, logical tree, parallel, desktop, distributed
 
@@ -53,7 +54,7 @@ online at [Vishnu online documentation](https://neteti.de/Vishnu.Doc/)<br />
 2. cloning of the forked repository **Vishnu** into the existing subdirectory
 	.../MyVishnu/**VishnuHome**
 	
-	- in the git-bash about git clone:
+	- in the git-bash via git clone:
 
 		 cd VishnuHome<br />
 		  		 git clone git@github.com:&lt;meOnGitHub&gt;/Vishnu.git
@@ -93,7 +94,7 @@ you can clone the corresponding sources into the **WorkFrame** folder provided f
 #### Short answer: *no*.<br />
 #### long answer:
 I (Erik) am currently (April 2024) still programming Vishnu alone.
-Even though I would of course appreciate all your experience reports, suggestions, ideas for improvement and error messages.
+Even though I would of course appreciate all your experience reports, suggestions, ideas for improvement and error messages
 with interest, at the moment I simply cannot foresee how things will develop.
 Where I can, I will correct errors and take suggestions into account in my personal prioritisation.
 But at this point it should be said again: Vishnu is open source and free.
@@ -119,9 +120,8 @@ This is the only way you can possibly return your improvements later (**pull-req
 As the Vishnu kernel is subject to particularly high requirements in terms of correctness, stability and performance,
 you might want to start with corrections, extensions to - or new creation of - Vishnu plugins.
 The Vishnu kernel is also very time-consuming to test, which is why reactions may take longer.
-can be a long time coming.
 
-#### Restore changes to the source code to the original repository
+#### Return source code changes to the original repository
 
 If you have made changes to the plugin framework or Vishnu source code and tested them thoroughly,
 you can return your own **branch** via a **"pull request "**.

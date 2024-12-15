@@ -16,7 +16,7 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "/underConstruction" # the subpath of the site for online Testing on https://readybin.github.io/underConstruction
 url: "https://readybin.github.io/underConstruction" # the base hostname & protocol for your site
 
-keywords: ["Vishnu", "monitoring", "monitor", "Überwachung", "überwachen", "plugin", "parallel", "Prozesssteuerung", "Steuerung", "process", "job-controller", "controlling", "windows", "desktop", "c#", "github", "open source", "kostenlos", "free", "vishnu@reallyhuman.net"]
+keywords: ["Vishnu", "monitoring", "monitor", "Überwachung", "überwachen", "plugin", "parallel", "Prozesssteuerung", "Steuerung", "process", "job-controller", "controlling", "windows", "desktop", "c#", "github", "open source", "kostenlos", "free", "Erik", "Nagel", "vishnu@reallyhuman.net"]
 
 # theme: minima
 

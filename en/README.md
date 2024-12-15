@@ -73,8 +73,8 @@ Vishnu is only the logic engine, the actual work is done by the Vishnu plugins.
 Vishnu plugins are small programme parts (DLLs) that are loaded by Vishnu at runtime.
 The Vishnu plugins include, among others, the checkers.
 Checkers are the essential Vishnu actors. They do the checking work and deliver
-check results (see also in the help [Vishnu actors](https://neteti.de/Vishnu.Doc/html/bc0ffa08-c936-4fad-8fdb-dbd2279fc360.htm)
-and [own checker](https://neteti.de/Vishnu.Doc/html/a3f9771a-ac24-46c0-97df-d2bde6a990e8.htm)).
+check results (see also in the help [Vishnu actors](https://neteti.de/Vishnu.doc.en/html/bc0ffa08-c936-4fad-8fdb-dbd2279fc360.htm)
+and [own checker](https://neteti.de/Vishnu.doc.en/html/a3f9771a-ac24-46c0-97df-d2bde6a990e8.htm)).
 Vishnu already supplies a range of checkers. You can find these under [InPlug](https://github.com/InPlug).
 
 You can fork and clone Vishnu plug-ins in the same way as already described under [Source code and development](#source-code-and-development),
@@ -108,8 +108,8 @@ However, please check first whether a suitable topic already exists.<br />
 All kinds of suggestions for improvement are welcome, as are personal experience reports.
 These don't necessarily have to be world-improving deeds; spelling mistakes also need to be corrected.
 In particular, I still lack good ideas and solutions for an English presence.
-In the Vishnu-Help you will find suggestions on the pages [collection of ideas](https://neteti.de/Vishnu.Doc/html/2e84f44c-6249-45dc-bdc2-c656de87c907.htm)
-and [known errors and problems](https://neteti.de/Vishnu.Doc/html/68cd3f39-4a2c-49f3-8a90-b2442b5880a9.htm).
+In the Vishnu-Help you will find suggestions on the pages [collection of ideas](https://neteti.de/Vishnu.doc.en/html/2e84f44c-6249-45dc-bdc2-c656de87c907.htm)
+and [known errors and problems](https://neteti.de/Vishnu.doc.en/html/68cd3f39-4a2c-49f3-8a90-b2442b5880a9.htm).
 
 #### Changes and debugging of the plugin or Vishnu source code
 

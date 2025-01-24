@@ -40,9 +40,11 @@
 The **DemoJobs** subdirectory contains the job definitions of a number of interesting demonstration jobs.
 
 ## Documentation
-You can find the detailed documentation in **Vishnu** with **F1**, in the **Vishnu_doc.en.chm** or
-online at [Vishnu online documentation](https://neteti.de/Vishnu.doc.en/)<br />
-<span style="font-size:14px;">(Note: If the help file (*.chm) is not displayed correctly, please refer to [CHM-HowTo](https://readybin.github.io/underConstruction/en/ChmHowTo.html)).</span>
+You can find the detailed documentation in **Vishnu** with **F1**; This will take you
+by default to the [Vishnu online documentation](https://neteti.de/Vishnu.doc.en/)<br />
+There is also a Vishnu help file available for download
+at [Vishnu_doc.en.chm](https://neteti.de/Vishnu.doc.en/Vishnu_doc.en.chm)
+<span style="font-size:14px;">(Note: If the help file (*.chm) is not displayed correctly, please see the [CHM-HowTo](z_Chm_HowTo.md).)</span>
 #### Keywords: Windows, wpf, c#, monitoring, job-controlling, logical tree, parallel, desktop, distributed
 
 ## Source code and development

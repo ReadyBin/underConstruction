@@ -40,9 +40,11 @@
 Im Unterverzeichnis **DemoJobs** stehen die Job-Definitionen einer Reihe von interessanten Demonstrations-Jobs.
 
 ## Dokumentation
-Die ausführliche Dokumentation findest du in **Vishnu** mit **F1**, im mit gelieferten **Vishnu_doc.de.chm** oder
-online unter [Vishnu online Dokumentation](https://neteti.de/Vishnu.doc.de/)<br />
-<span style="font-size:14px;">(Hinweis: Wenn die Hilfedatei (*.chm) nicht korrekt angezeigt werden sollte, sieh bitte im [CHM-HowTo](z_ChmHowTo.md) nach.)</span>
+Die ausführliche Dokumentation findest du in **Vishnu** mit **F1**; Damit gelangst du
+per Voreinstellung zur [Vishnu online Dokumentation](https://neteti.de/Vishnu.doc.de/)<br />
+Es steht aber auch eine Vishnu-Hilfedatei zum Download bereit
+unter [Vishnu_doc.de.chm](https://neteti.de/Vishnu.doc.de/Vishnu_doc.de.chm)
+<span style="font-size:14px;">(Hinweis: Wenn die Hilfedatei (*.chm) nicht korrekt angezeigt werden sollte, sieh bitte im [CHM-HowTo](z_Chm_HowTo.md) nach.)</span>
 #### Stichworte: Windows, wpf, c#, monitoring, job-controlling, logical tree, parallel, desktop, distributed
 
 ## Quellcode und Entwicklung
@@ -175,8 +177,6 @@ Danke an Matt Davis für seine sehr gute Mutex-Lösung.
 
 [inzwischen nicht mehr online: ZIP-Routinen für ZIPs > 4GB mit Passwörtern]<br />
 Danke auch Peter Bromberg für seine Unterstützung bei den Zip-Routinen.
-[_intern_](https://github.com/VishnuHome/Setup/raw/master/Vishnu.bin/Vishnu.0.zip).
-[_intern_](https://github.com/VishnuHome/Setup/raw/master/Vishnu.bin/Vishnu.1.zip).
 
 [Equality Converter](https://stackoverflow.com/questions/37302270/comparing-two-dynamic-values-in-datatrigger)<br />
 Dank an Jason Tyler auf stackoverflow.
